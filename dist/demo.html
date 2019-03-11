@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>demochatvue demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./demochatvue.umd.js"></script>
+
+<link rel="stylesheet" href="./demochatvue.css">
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: demochatvue
+  }
+}).$mount('#app')
+</script>

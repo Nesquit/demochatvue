@@ -5,6 +5,5 @@ import Chat from 'vue-beautiful-chat'
 Vue.use(Chat)
 
 new Vue({
-  el: '#app',
   render: h => h(App)
-})
+}).$mount('#app')
