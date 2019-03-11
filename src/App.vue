@@ -23,9 +23,17 @@ export default {
   name: 'demochatvue',
   data() {
     return {
-      participants: [], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
+      participants: [
+        {
+          id: 'user1',
+          name: 'Matteo',
+          imageUrl: 'https://avatars3.githubusercontent.com/u/1915989?s=230&v=4'
+        }
+      ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
       titleImageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
-      messageList: [], // the list of the messages to show, can be paginated and adjusted dynamically
+      messageList: [
+          { type: 'text', author: `me`, data: { text: `Say yes!` } }
+      ], // the list of the messages to show, can be paginated and adjusted dynamically
       newMessagesCount: 0,
       isChatOpen: false, // to determine whether the chat window should be open or closed
       showTypingIndicator: '', // when set to a value matching the participant.id it shows the typing indicator for the specific user
