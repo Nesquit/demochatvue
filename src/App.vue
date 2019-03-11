@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'app',
+  name: 'demochatvue',
   data() {
     return {
       participants: [
